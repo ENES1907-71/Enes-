@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sıkça Sorulan Sorular</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    padding:40px 20px;
+    color:#333;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#1f2937;
+}
+
+.subtitle{
+    text-align:center;
+    color:#6b7280;
+    margin-bottom:35px;
+}
+
+.faq-item{
+    background:#fff;
+    border-radius:12px;
+    margin-bottom:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    overflow:hidden;
+}
+
+.faq-item summary{
+    list-style:none;
+    cursor:pointer;
+    padding:20px;
+    font-size:18px;
+    font-weight:600;
+    position:relative;
+}
+
+.faq-item summary::-webkit-details-marker{
+    display:none;
+}
+
+.faq-item summary::after{
+    content:"+";
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:24px;
+    transition:.3s;
+}
+
+.faq-item[open] summary::after{
+    content:"−";
+}
+
+.faq-content{
+    padding:0 20px 20px;
+    line-height:1.7;
+    color:#555;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:#777;
+    font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Sıkça Sorulan Sorular</h1>
+    <p class="subtitle">En çok merak edilen soruların cevapları</p>
+
+    <details class="faq-item">
+        <summary>Nasıl kayıt olabilirim?</summary>
+        <div class="faq-content">
+            Kayıt olmak için ana sayfadaki "Üye Ol" butonuna tıklayın ve gerekli bilgileri doldurun.
+        </div>
+    </details>
+
+    <details class="faq-item">
+        <summary>Şifremi unuttum, ne yapmalıyım?</summary>
+        <div class="faq-content">
+            Giriş ekranındaki "Şifremi Unuttum" bağlantısını kullanarak yeni bir şifre oluşturabilirsiniz.
+        </div>
+    </details>
+
+    <details class="faq-item">
+        <summary>Ödeme yöntemleri nelerdir?</summary>
+        <div class="faq-content">
+            Kredi kartı, banka kartı ve havale/EFT yöntemleri ile ödeme yapabilirsiniz.
+        </div>
+    </details>
+
+    <details class="faq-item">
+        <summary>Siparişimi nasıl takip edebilirim?</summary>
+        <div class="faq-content">
+            Hesabınıza giriş yaptıktan sonra "Siparişlerim" bölümünden güncel durumunu görüntüleyebilirsiniz.
+        </div>
+    </details>
+
+    <details class="faq-item">
+        <summary>İade süresi kaç gündür?</summary>
+        <div class="faq-content">
+            Ürünü teslim aldıktan sonra 14 gün içerisinde iade talebinde bulunabilirsiniz.
+        </div>
+    </details>
+
+    <details class="faq-item">
+        <summary>Müşteri desteğine nasıl ulaşabilirim?</summary>
+        <div class="faq-content">
+            İletişim sayfasındaki formu doldurarak veya destek e-posta adresimize yazarak bize ulaşabilirsiniz.
+        </div>
+    </details>
+
+    <div class="footer">
+        © 2026 Tüm Hakları Saklıdır.
+    </div>
+
+</div>
+
+</body>
+</html>
